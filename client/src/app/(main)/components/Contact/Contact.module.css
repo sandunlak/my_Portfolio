@@ -1,0 +1,101 @@
+.contact {
+    background-color: var(--bg-color);
+  }
+  
+  .contactContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-top: 3rem;
+  }
+  
+  .contactInfo h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+  }
+  
+  .contactInfo p {
+    margin-bottom: 2rem;
+    opacity: 0.9;
+  }
+  
+  .infoList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .infoList li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .infoIcon {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .formGroup {
+    position: relative;
+  }
+  
+  .formGroup input,
+  .formGroup textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--text-color);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: var(--transition);
+  }
+  
+  .formGroup textarea {
+    resize: vertical;
+    min-height: 150px;
+  }
+  
+  .formGroup input:focus,
+  .formGroup textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(58, 134, 255, 0.2);
+  }
+  
+  .submitBtn {
+    align-self: flex-start;
+  }
+  
+  .statusMessage {
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    margin-top: 1rem;
+  }
+  
+  .success {
+    background-color: rgba(40, 167, 69, 0.1);
+    color: #28a745;
+  }
+  
+  .error {
+    background-color: rgba(220, 53, 69, 0.1);
+    color: #dc3545;
+  }
+  
+  @media (max-width: 992px) {
+    .contactContent {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
