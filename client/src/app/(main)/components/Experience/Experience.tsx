@@ -1,4 +1,4 @@
-"use client"; // Required for Framer Motion animations
+/*"use client"; // Required for Framer Motion animations
 
 import { motion } from 'framer-motion';
 import styles from './Experience.module.css';
@@ -58,4 +58,4 @@ export default function Experience() {
       </div>
     </section>
   );
-}
+}*/

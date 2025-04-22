@@ -2,29 +2,33 @@
 
 import { motion } from 'framer-motion';
 import styles from './Projects.module.css';
+import { FiGithub } from 'react-icons/fi';
 
 export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: 'E-commerce Platform',
-      description: 'A full-featured online store with product listings, cart functionality, and secure checkout.',
-      tags: ['React', 'Node.js', 'MongoDB'],
-      link: '#',
+      title: 'Personal Finance Tracker App',
+      description: 'A web application for people to add their incomes, budgets, daily transactions and goals.',
+      tags: ['Express.js', 'MongoDB', 'JWT', 'JavaScript', 'Vue.js'],
+      githubLink: 'https://github.com/sandunlak/Personal-Finance-Tracker-App',
+      demoLink: 'https://cool-bavarois-339bf8.netlify.app/'
     },
     {
       id: 2,
-      title: 'Portfolio Website',
-      description: 'A responsive portfolio website built with modern web technologies.',
-      tags: ['Next.js', 'CSS Modules', 'Framer Motion'],
-      link: '#',
+      title: 'BIDMASTER Online Auction System',
+      description: 'A web application for people to sell their products through the bidding process.',
+      tags: [' MongoDB, Express, ReactJS, NodeJS, CSS, React-Bootstrap, JavaScript'],
+      githubLink: 'https://github.com/sandunlak/BidMaster_Uni_project',
+      demoLink: '#'
     },
     {
       id: 3,
-      title: 'Task Management App',
-      description: 'A productivity application for organizing tasks with drag-and-drop functionality.',
-      tags: ['React', 'Firebase', 'Material UI'],
-      link: '#',
+      title: 'Health Mate Online Fitness Mobile App ',
+      description: 'A Mobile app for university students and busy peoples to maintain their physical and mental health. ',
+      tags: ['Kotlin'],
+      githubLink: 'https://github.com/sandunlak/HealthMateApp',
+      demoLink: '#'
     },
   ];
 
@@ -61,9 +65,26 @@ export default function Projects() {
                   ))}
                 </div>
               </div>
-              <a href={project.link} className={styles.projectLink}>
-                View Project →
-              </a>
+              <div className={styles.projectLinks}>
+                <a 
+                  href={project.githubLink} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className={styles.projectLink}
+                >
+                  <FiGithub /> View Code
+                </a>
+                {project.demoLink && (
+                  <a 
+                    href={project.demoLink} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className={styles.projectLink}
+                  >
+                    Live Demo
+                  </a>
+                )}
+              </div>
             </motion.div>
           ))}
         </div>

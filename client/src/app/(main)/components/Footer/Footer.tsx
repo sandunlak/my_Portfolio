@@ -7,8 +7,8 @@ export default function Footer() {
       <div className="container">
         <div className={styles.footerContent}>
           <div className={styles.footerInfo}>
-            <h3>Your Name</h3>
-            <p>Frontend Developer creating modern web experiences.</p>
+            <h3>Sandun Hettiarachchi</h3>
+            <p>modern web experiences.</p>
           </div>
 
           <div className={styles.footerLinks}>
@@ -20,9 +20,7 @@ export default function Footer() {
               <li>
                 <a href="#about">About</a>
               </li>
-              <li>
-                <a href="#experience">Experience</a>
-              </li>
+              
               <li>
                 <a href="#projects">Projects</a>
               </li>
@@ -35,21 +33,19 @@ export default function Footer() {
           <div className={styles.footerSocial}>
             <h4>Connect With Me</h4>
             <div className={styles.socialIcons}>
-              <a href="https://github.com" aria-label="GitHub">
+              <a href="https://github.com/sandunlak" aria-label="GitHub">
                 <FaGithub />
               </a>
-              <a href="https://linkedin.com" aria-label="LinkedIn">
+              <a href="linkedin.com/in/sandun-hettiarachchi" aria-label="LinkedIn">
                 <FaLinkedin />
               </a>
-              <a href="https://twitter.com" aria-label="Twitter">
-                <FaTwitter />
-              </a>
+              
             </div>
           </div>
         </div>
 
         <div className={styles.footerBottom}>
-          <p>&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Sandun Hettiarachchi. All rights reserved.</p>
         </div>
       </div>
     </footer>

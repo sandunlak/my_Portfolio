@@ -79,15 +79,15 @@ export default function Contact() {
             <ul className={styles.infoList}>
               <li>
                 <FiMail className={styles.infoIcon} />
-                <span>your.email@example.com</span>
+                <span>lakshansandun545@gmail.com</span>
               </li>
               <li>
                 <FiPhone className={styles.infoIcon} />
-                <span>+1 (123) 456-7890</span>
+                <span>+94 785506542</span>
               </li>
               <li>
                 <FiMapPin className={styles.infoIcon} />
-                <span>San Francisco, CA</span>
+                <span>30/c Cemetery Road Walpitamulla Dewalapola</span>
               </li>
             </ul>
           </motion.div>

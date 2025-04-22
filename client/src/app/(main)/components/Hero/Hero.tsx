@@ -15,9 +15,9 @@ export default function Hero() {
             className={styles.heroText}
           >
             <h1 className={styles.heroTitle}>
-              Hi, I'm <span className={styles.highlight}>Your Name</span>
+              Hi, I'm <span className={styles.highlight}>Sandun Hettiarachchi</span>
             </h1>
-            <h2 className={styles.heroSubtitle}>Frontend Developer</h2>
+            <h2 className={styles.heroSubtitle}> Software Engineering undergraduate with a focus on full-stack development</h2>
             <p className={styles.heroDescription}>
               I build exceptional digital experiences with modern web technologies.
             </p>

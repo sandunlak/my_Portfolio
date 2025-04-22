@@ -36,7 +36,7 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <ul className={styles.navLinks}>
-            {['about', 'experience', 'projects', 'contact'].map((item, i) => (
+            {['about', 'projects', 'contact'].map((item, i) => (
               <motion.li
                 key={item}
                 initial={{ opacity: 0, y: -20 }}
@@ -68,7 +68,7 @@ export default function Header() {
             className={styles.mobileMenu}
           >
             <ul>
-              {['about', 'experience', 'projects', 'contact'].map((item) => (
+              {['about', 'projects', 'contact'].map((item) => (
                 <li key={item}>
                   <Link 
                     href={`#${item}`} 

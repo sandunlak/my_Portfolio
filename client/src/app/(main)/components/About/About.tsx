@@ -39,15 +39,14 @@ export default function About() {
           >
             <h3>Who I Am</h3>
             <p>
-              I'm a passionate frontend developer with expertise in creating modern,
-              responsive web applications. With a strong foundation in JavaScript and
-              React, I bring ideas to life with clean, efficient code.
+            I am a Software Engineering undergraduate with a focus on full-stack development, skilled in both Java and JavaScript 
+            frameworks.
             </p>
             
             <div className={styles.skills}>
               <h4>My Skills</h4>
               <ul className={styles.skillsList}>
-                {['JavaScript', 'TypeScript', 'React', 'Next.js', 'HTML/CSS', 'Node.js', 'Git'].map((skill) => (
+                {['JavaScript', ' JAVA' , 'Python' , 'Kotlin' ,'C' , 'C++' , 'HTML' ,'CSS','SQL' , 'MySQL','MongoDB','ReactJS','NodeJS','NextJS','Express','Vue.js','GitHub','Eclipse','Postman','Figma' ].map((skill) => (
                   <li key={skill} className={styles.skillItem}>
                     {skill}
                   </li>
